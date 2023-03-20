@@ -34,7 +34,7 @@ func IsIpv4RuleAvailable() bool {
 }
 
 func GetIpv4RuleLen() int {
-	if IsDomainRuleAvailable() {
+	if IsIpv4RuleAvailable() {
 		return len(*Ipv4RangeRules)
 	} else {
 		return 0
